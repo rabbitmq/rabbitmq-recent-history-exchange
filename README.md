@@ -1,4 +1,11 @@
-# RabbitMQ Recent History Cache
+# RabbitMQ Recent History Exchange
+
+## This was migrated to https://github.com/rabbitmq/rabbitmq-server
+
+This repository has been moved to the main unified RabbitMQ "monorepo", including all open issues. You can find the source under [/deps/rabbitmq_recent_history_exchange](https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_recent_history_exchange).
+All issues have been transferred.
+
+## Overview
 
 Keeps track of the last 20 messages that passed through the exchange. Every time a queue is bound to the exchange it delivers that last 20 messages to them. This is useful for implementing a very simple __Chat History__ where clients that join the conversation can get the latest messages.
 
